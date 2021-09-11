@@ -1,0 +1,105 @@
+1.
+(200 steps)
+m = tf.contrib.learn.LinearClassifier(feature_columns=[
+  gender, native_country, education, occupation, workclass, marital_status, race,
+  age_buckets, education_x_occupation, age_buckets_x_education_x_occupation],
+  model_dir=model_dir)
+
+
+accuracy: 0.834654
+accuracy/baseline_label_mean: 0.236226
+accuracy/threshold_0.500000_mean: 0.834654
+auc: 0.879197
+global_step: 200
+labels/actual_label_mean: 0.236226
+labels/prediction_mean: 0.241362
+loss: 0.358873
+precision/positive_threshold_0.500000_mean: 0.710892
+recall/positive_threshold_0.500000_mean: 0.50572
+
+
+
+2.
+(200 steps)
+  gender, native_country, education, occupation, workclass, marital_status, race,
+  age_buckets, education_x_occupation, age_buckets_x_education_x_occupation,hours_per_week ],
+  model_dir=model_dir)
+
+accuracy: 0.835575
+accuracy/baseline_label_mean: 0.236226
+accuracy/threshold_0.500000_mean: 0.835575
+auc: 0.87989
+global_step: 200
+labels/actual_label_mean: 0.236226
+labels/prediction_mean: 0.244328
+loss: 0.35892
+precision/positive_threshold_0.500000_mean: 0.710025
+recall/positive_threshold_0.500000_mean: 0.513781
+
+
+
+3.
+(200 steps)
+m = tf.contrib.learn.LinearClassifier(feature_columns=[
+  gender, native_country, education, occupation, workclass, marital_status, race,
+  age_buckets, education_x_occupation, age_buckets_x_education_x_occupation,hours_per_week, capital_gain, capital_loss, education_num ],
+  model_dir=model_dir)
+
+accuracy: 0.815736
+accuracy/baseline_label_mean: 0.236226
+accuracy/threshold_0.500000_mean: 0.815736
+auc: 0.860015
+global_step: 200
+labels/actual_label_mean: 0.236226
+labels/prediction_mean: 0.280068
+loss: 1.68488
+precision/positive_threshold_0.500000_mean: 0.614386
+recall/positive_threshold_0.500000_mean: 0.590744
+
+
+
+4.
+(200 steps)
+m = tf.contrib.learn.LinearClassifier(feature_columns=[
+  gender, native_country, occupation, workclass, race,
+  age_buckets, education_x_occupation, age_buckets_x_education_x_occupation, hours_per_week],
+  model_dir=model_dir)
+accuracy: 0.810208
+accuracy/baseline_label_mean: 0.236226
+accuracy/threshold_0.500000_mean: 0.810208
+auc: 0.829534
+global_step: 200
+labels/actual_label_mean: 0.236226
+labels/prediction_mean: 0.245422
+loss: 0.413478
+precision/positive_threshold_0.500000_mean: 0.67027
+recall/positive_threshold_0.500000_mean: 0.386895
+
+
+5.
+(400 steps)
+m = tf.contrib.learn.LinearClassifier(feature_columns=[
+  gender, native_country, education, occupation, workclass, marital_status, race,
+  age_buckets, education_x_occupation, age_buckets_x_education_x_occupation ],
+  model_dir=model_dir)
+  accuracy: 0.836067
+accuracy/baseline_label_mean: 0.236226
+accuracy/threshold_0.500000_mean: 0.836067
+auc: 0.883805
+global_step: 400
+labels/actual_label_mean: 0.236226
+labels/prediction_mean: 0.239753
+loss: 0.35209
+precision/positive_threshold_0.500000_mean: 0.707291
+recall/positive_threshold_0.500000_mean: 0.522101
+
+
+6.
+(40 steps)
+m = tf.contrib.learn.LinearClassifier(feature_columns=[
+  gender, native_country, education, occupation, workclass, marital_status, race,
+  age_buckets, education_x_occupation, age_buckets_x_education_x_occupation ],
+  model_dir=model_dir)
+
+
+
